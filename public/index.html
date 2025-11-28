@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="user-info">
+                <h2 id="userName">Yuklanmoqda...</h2>
+                <p>Balans: <span id="userBalance">0</span> so'm</p>
+                <span id="userRole" class="badge">User</span>
+            </div>
+        </header>
+
+        <div id="timer" class="deadline-box">Buyurtma 10:10 gacha qabul qilinadi</div>
+
+        <main>
+            <div id="menuSection">
+                <h3>Bugungi Taomnoma</h3>
+                <div id="menuList" class="grid-container"></div>
+            </div>
+
+            <div id="adminPanel" class="hidden">
+                <hr>
+                <h3>Boshqaruv Paneli</h3>
+                
+                <div class="form-group">
+                    <input type="text" id="newFoodName" placeholder="Taom nomi">
+                    <input type="number" id="newFoodPrice" placeholder="Narxi">
+                    <button onclick="addMenu()" class="btn-primary">Taom qo'shish</button>
+                </div>
+
+                <h3>Xodimlar & Balans</h3>
+                <div id="userList" class="list-group"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
