@@ -33,7 +33,7 @@ bot.on('contact', async (msg) => {
         bot.sendMessage(chatId, "Rahmat! Endi Web App orqali ovqat buyurtma qilishingiz mumkin.", {
             reply_markup: {
                 remove_keyboard: true,
-                inline_keyboard: [[{ text: "🍴 Ovqat Buyurtma Qilish", web_app: { url: "https://SIZNING_VERCEL_APP_URL.vercel.app" } }]]
+                inline_keyboard: [[{ text: "🍴 Ovqat Buyurtma Qilish", web_app: { url: "https://abeed.vercel.app/" } }]]
             }
         });
     } else {
